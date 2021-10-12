@@ -1,0 +1,72 @@
+
+/* ADMIN_PANEL */
+.admin_panel-body .content-container {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 2fr 9fr;
+    grid-column-gap: 30px;
+}
+.roles .button-group {
+    display: flex;
+    flex-direction: column;
+}
+.roles .button {
+    font-family: 'Roboto', sans-serif;
+    padding: 16px 0;
+    border-radius: 10px;
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow: 0 0 5px #000;
+}
+.roles .button:not(:last-child) {
+    margin-bottom: 10px;
+}
+.roles .role-button {
+    background-color: #334fee;
+}
+.roles .support-button {
+    background: #247e60;
+}
+.roles .moder-button {
+    background-color: #84369c;
+}
+.roles .admin-button {
+    background-color: #a0803c;
+}
+.roles .agent-button {
+    background-color: #8f2c2c;
+}
+.permission {
+    background-color: #fff;
+    /* border: 1px solid #525252; */
+    box-shadow: 0 0 10px #838383;
+    border-radius: 7.5px;
+    height: 100%;
+    display: none;
+}
+.permission_active {
+    display: block;
+}
+.permission-title {
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media(max-width: 600px) {
+    .admin_panel-body .content-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .roles .button-group {
+        /* flex-direction: row; */
+        justify-content: space-between;
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+    .roles .button:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,299 @@
+.fundraising-body .content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 80%;
+}
+.fundraising-left {
+    /* background-color: rgb(248, 248, 248); */
+    background-color: #fff;
+    padding: 50px 40px;
+    max-width: 60%;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(235, 235, 235);
+    box-shadow: 0 0 7px rgb(184, 217, 243);
+    transform: translateY(25px);
+}
+.fundraising-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 40%;
+    border-radius: 10px;
+    padding: 10px;
+}
+.fund-card-title {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 44px;
+}
+.fund-card-descr {
+    /* letter-spacing: 0.5px; */
+    margin-top: 20px;
+    font-size: 18px;
+}
+.fundraising-button {
+    margin-top: 20px;
+}
+.card {
+    width: 38%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 45px;
+    box-shadow: 0 0 7px rgb(184, 217, 243);
+}
+.first-card {
+    margin-bottom: 10px;
+}
+.card-icon-div {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    background-color: #aafcffaf;
+    border-radius: 50%;
+    padding: 15px;
+    transform: translateY(-75%);
+    /* border: 1px solid gray; */
+}
+.card-icon {
+    margin: auto;
+}
+.card-icon-div1 {
+    background-color: #c6fdffaf;
+}
+.card-icon-div2 {
+    background-color: #ffbdbbaf;
+}
+.card-icon-div3 {
+    background-color: #fff6a7af;
+}
+.card-icon-div4 {
+    background-color: #c1ffc4af;
+    /* background-color: #006106; */
+}
+.card-icon {
+    width: 100%;
+}
+.card-title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: -40px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    letter-spacing: 0.3px;
+}
+.card-descr {
+    font-size: 14px;
+}
+@media(max-width:1200px) {
+    .fundraising-left {
+        max-width: 50%;
+        max-height: 270px;
+    }
+}
+@media(max-width:1050px) {
+    .fundraising-body .content-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .fundraising-left {
+        margin: 0;
+        margin-bottom: 40px;
+        max-width: 70%;
+        max-height: 100%;
+    }
+    .fundraising-right {
+        max-width: 80%;
+    }
+    .first-card {
+        margin-bottom: 10px;
+    }
+}
+@media(max-width:700px) {
+    .fundraising-left {
+        max-width: 90%;
+        padding: 40px 32px;
+    }
+    .fundraising-right {
+        max-width: 100%;
+    }
+}
+@media(max-width:570px) {
+    .fund-card-title {
+        font-size: 38px;
+    }
+    .fund-card-descr {
+        font-size: 16px;
+    }
+}
+@media(max-width:485px) {
+    .fundraising-left {
+        max-width: 100%;
+    }
+    .fund-card-title {
+        font-size: 32px;
+    }
+    .fundraising-right {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        padding: 40px;
+        width: 70%;
+    }
+    .card-icon-div {
+        transform: translateY(-105%);
+    }
+    .card-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .card-descr {
+        font-size: 16px;
+    }
+}
+@media(max-width:400px) {
+    .fundraising-body .content-container {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+/* FUNDRAISING_SPECIAL */
+.fund_spec .collecting-card {
+    margin: 40px auto;
+    max-width: 1000px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    padding: 60px 30px;
+    /* background-color: #2a2a; */
+    border-radius: 10px;
+}
+.fund_spec .main-subtitle {
+    text-align: center;
+    font-size: 19px;
+    max-width: 600px;
+    margin: 10px auto;
+}
+.flex-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+}
+.flex-form select {
+    width: 200px;
+}
+.flex-form .currency-div {
+    margin-left: 5px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.flex-form .currency-div .currency-icon {
+    border-radius: 5px;
+    background-color: #52baff;
+}
+.fund_spec .radio-div {
+    /* background-color: #22a; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.fund_spec .radio-div:hover {
+    transform: scale(1.01);
+    transition: .2s;
+}
+.fund_spec .radio-div:active {
+    transform: scale(1);
+    transition: .2s;
+}
+.fund_spec .pay-method-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.fund_spec .payment-method-img {
+    margin-right: 10px;
+}
+.fund_spec .universal-form .no_card-alert {
+    /* position: absolute; */
+    color: rgb(151, 27, 27);
+    font-size: 16px;
+    margin: auto;
+    display: inline;
+    margin-top: 15px;
+}
+.fund_spec .universal-form .no_card-alert-link {
+    text-decoration: none;
+    padding: 5px;
+    color: #041d8a;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.fund_spec .universal-form .no_card-alert-link:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+    transition: .2s;
+}
+.fund_spec .universal-form .no_card-alert-link:active {
+    transform: scale(1);
+    transition: .2s;
+}
+.fund_spec .universal-form .submit-input {
+    min-width: 323px;
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+    margin-bottom: 0;
+    background-color: #041d8a;
+}
+@media(max-width:1100px) {
+    .fund_spec .collecting-card {
+        margin: 20px;
+    }
+}
+@media(max-width:500px) {
+    .fund_spec .collecting-card {
+        margin: 10px;
+        padding: 30px 10px;
+    }
+    .fund_spec .main-title {
+        font-size: 24px;
+    }
+    .fund_spec .main-subtitle {
+        font-size: 18px;
+        margin: 15px auto 10px auto;
+    }
+    .fund_spec .universal-form {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .flex-form select {
+        max-width: 150px;
+    }
+    .fund_spec .radio-div {
+        width: 200px;
+    }
+    .fund_spec .universal-form .submit-input {
+        min-width: 200px;
+    }
+    .fund_spec .universal-form .no_card-alert {
+        text-align: center;
+    }
+}

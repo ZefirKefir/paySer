@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Админ-панель - Payser.Pro</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin_panel.css">
+</head>
+<body class="admin_panel-body">
+    <!-- <header class="header">
+        <div class="header-link-group">
+            <div class="header-left">
+                <a href="index.html" class="main-logo-link button">
+                    <img src="img/payser_logo/main/payser_main_v1.svg" alt="payser.pro logo" class="main-logo-img">
+                </a>
+            </div>
+            <div class="header-right">
+                <a href="registration.html" class="registration-link button">Создать&nbsp;кошелёк</a>
+                <a href="login.html" class="login-link button">Войти</a>
+            </div>
+            <button class="burger-button">
+                <img src="img/expand_arrow.svg" alt="expand arrow icon" class="burger-icon">
+            </button>
+            <div class="burger-menu">
+                <ul class="burger-list">
+                    <li class="burger-list-item">
+                        <a href="login.html" class="login-link button burger-link">Войти</a>
+                    </li>
+                    <li class="burger-list-item">
+                        <a href="registration.html" class="registration-link button burger-link">Создать&nbsp;кошелёк</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header> -->
+    <header class="header">
+        <div class="header-link-group">
+            <div class="header-left">
+                <a href="index.html" class="main-logo-link button">
+                    <img src="img/payser_logo/main/payser_main_v1.svg" alt="payser.pro logo" class="main-logo-img">
+                </a>
+            </div>
+            <div class="header-right">
+                <ul class="menu-list">
+                    <li class="menu-list-item">
+                        <a href="admin_panel.html" class="support-link button menu-list-link">Поддержка</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="admin_panel.html" class="moder-link button menu-list-link">Модератор</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="admin_panel.html" class="admin-link button menu-list-link">Админ</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="admin_panel.html" class="agent-link button menu-list-link">252</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="bussiness.html" class="bussiness-link button menu-list-link">Бизнес</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="index.html" class="logout-link button menu-list-link">Выйти</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="burger-button">
+                <img src="img/expand_arrow.svg" alt="expand arrow icon" class="burger-icon">
+            </button>
+            <div class="burger-menu">
+                <ul class="burger-list">
+                    <li class="burger-list-item">
+                        <a href="admin_panel.html" class="support-link button burger-list-link">Поддержка</a>
+                    </li>
+                    <li class="burger-list-item">
+                        <a href="admin_panel.html" class="moder-link button burger-list-link">Модератор</a>
+                    </li>
+                    <li class="burger-list-item">
+                        <a href="admin_panel.html" class="admin-link button burger-list-link">Админ</a>
+                    </li>
+                    <li class="burger-list-item">
+                        <a href="admin_panel.html" class="agent-link button burger-list-link">252</a>
+                    </li>
+                    <li class="burger-list-item">
+                        <a href="bussiness.html" class="bussiness-link button burger-list-link">Бизнес</a>
+                    </li>
+                    <li class="burger-list-item">
+                        <a href="index.html" class="logout-link button burger-list-link">Выйти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="content-container">
+        <div class="roles">
+            <div class="button-group">
+                <button class="button role-button">252</button>
+                <button class="button role-button">Баланс</button>
+                <button class="button role-button">Бизнес</button>
+                <button class="button role-button">Пользователи</button>
+            </div>
+        </div>
+        <div class="permissions">
+            <div class="permission permission_active">
+                <h2 class="permission-title">Поддержка</h2>
+                <form class="universal-form">
+                    <div class="simple-input-div">
+                        <input type="text" placeholder="Обычный инпут" class="simple-input">
+                        <input type="password" placeholder="Скрытый инпут" class="simple-input">
+                    </div>
+                    <div class="select-div">
+                        <label for="sex" class="main-label">Выберите свой пол</label>
+                        <select name="sex" id="sex">
+                            <option value="chuj">Хуй</option>
+                            <option value="pizda">Пизда</option>
+                            <option value="oba">Оба</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h3 class="main-label">Чеки ( x )</h3>
+                        <div class="checkbox-div">
+                            <input type="checkbox" id="checkbox1" class="checkbox-input" checked>
+                            <label for="checkbox1">Первый чек</label>
+                        </div>
+                        <div class="checkbox-div">
+                            <input type="checkbox" id="checkbox2" class="checkbox-input">
+                            <label for="checkbox2">Второй чек</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="main-label">Радио ( x )</h3>
+                        <div class="radio-div">
+                            <input type="radio" name="chuj" id="radio1" class="radio-input" checked>
+                            <label for="radio1" name="chuj">Радио 1</label>
+                        </div>
+                        <div class="radio-div">
+                            <input type="radio" name="chuj" id="radio2" class="radio-input">
+                            <label for="radio2" name="chuj">Радио 2</label>
+                        </div>
+                    </div>
+                    <div class="textarea-div">
+                        <h3 class="main-label">Текст ареа</h3>
+                        <label for="textarea"></label>
+                        <textarea name="textarea" class="textarea-input"></textarea>
+                    </div>
+                    <div class="insert-div">
+                        <label for="file" class="main-label">Инсёрт</label>
+                        <input type="file" class="file-input">
+                    </div>
+                    <input type="submit" value="Сохранить" class="submit-input">
+                </form>
+            </div>
+            <div class="permission">
+                <h2 class="permission-title">Модератор</h2>
+            </div>
+            <div class="permission">
+                <h2 class="permission-title">Админ</h2>
+            </div>
+            <div class="permission">
+                <h2 class="permission-title">252</h2>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-top-part">
+            <div class="foot-left">
+                <h4 class="list-title">Информация</h4>
+                <ul class="list">
+                    <li class="list-item"><a href="index.html#about" class="list-link">О нас</a></li>
+                    <li class="list-item"><a href="index.html#posibilities" class="list-link">Наши возможности</a></li>
+                    <li class="list-item"><a href="offers.html" class="list-link">Оферты</a></li>
+                </ul>
+            </div>
+            <div class="foot-center">
+                <h4 class="list-title">Клиентам</h4>
+                <ul class="list">
+                    <li class="list-item"><a href="terms-of-use.html" class="list-link">Пользовательское соглашение</a></li>
+                    <li class="list-item"><a href="privacy-policy.html" class="list-link">Политика конфиденциальности</a></li>
+                    <li class="list-item"><a href="data-protection.html" class="list-link">Защита данных</a></li>
+                </ul>
+            </div>
+            <div class="foot-right">
+                <h4 class="list-title">Разработчикам</h4>
+                <ul class="list">
+                    <li class="list-item"><a href="api_main.html" class="list-link">API (P2P)</a></li>
+                    <li class="list-item"><a href="api_main.html" class="list-link">API (B2B)</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom-part">
+            <div class="button-group">
+                <a href="#" class="mob-link appstore-mob-link button">
+                    <img src="img/app_store.svg" width="30" alt="icon: apple" class="apple-icon">
+                    <span class="mob-link-text">App Store</span>
+                </a>
+                <a href="#" class="mob-link googleplay-mob-link button">
+                    <img src="img/google_play.svg" width="30" alt="icon: google play" class="googleplay-icon">
+                    <span class="mob-link-text">Google Play</span>
+                </a>
+            </div>
+            <img src="img/pci.svg" alt="icon: pci" class="footer-copyright-img">
+            <img src="img/visa.svg" alt="icon: visa" class="footer-copyright-img">
+            <img src="img/mir.svg" alt="icon: mir" class="footer-copyright-img">
+            <img src="img/ms.svg" alt="icon: ms" class="footer-copyright-img">
+            <p class="copyright-p">© 2020 Payser.pro, Inc.</p>
+        </div>
+    </footer>
+<script src="js/burger.js"></script>
+<script src="js/adminPanel.js"></script>
+</body>
+</html>

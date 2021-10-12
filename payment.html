@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Оплата - Payser.Pro</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/offers.css">
+</head>
+<body class="payment-body">
+    <!-- <header class="header">
+        <div class="header-link-group">
+            <div class="header-left">
+                <a href="index.html" class="main-logo-link button">
+                    <img src="img/payser_logo/main/payser_main_v1.svg" alt="payser.pro logo" class="main-logo-img">
+                </a>
+            </div>
+            <div class="header-right">
+                <a href="registration.html" class="registration-link button">Создать&nbsp;кошелёк</a>
+                <a href="login.html" class="login-link button">Войти</a>
+            </div>
+            <button class="burger-button">
+                <img src="img/expand_arrow.svg" alt="expand arrow icon" class="burger-icon">
+            </button>
+            <div class="burger-menu">
+                <ul class="burger-list">
+                    <li class="burger-list-item">
+                        <a href="login.html" class="login-link button burger-link">Войти</a>
+                    </li>
+                    <li class="burger-list-item">
+                        <a href="registration.html" class="registration-link button burger-link">Создать&nbsp;кошелёк</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header> -->
+    <!-- <button class="chat-button button ">
+        <img src="img/chat.svg" width="35" alt="icon: chat" class="chat-icon">
+    </button>
+    <div class="chat-block"></div> -->
+    <div class="content-container">
+        <div class="payment-div">
+            <div class="payment-left">
+                <div class="button-div">
+                    <button class="bank-card-button payment-select-button payment-select-button_active">
+                        <img src="img/credit-card.svg" alt="icon: bank card" class="button-icon bank-card-button-icon">
+                        Банковская карта
+                    </button>
+                    <button class="payser-wallet-button payment-select-button">
+                        <img src="img/payser_logo/logo/payser_logo.svg" alt="logo: payser" class="button-icon">
+                        Кошелёк PAYSER
+                    </button>
+                </div>
+                <div class="section-content section-content_active">
+                    <div class="card-section">
+                        <div class="card-card add-card-card">
+                            <div class="card-top">
+                                <label for="card-num">Номер карты</label>
+                                <input type="number" class="card-number" placeholder="1234 1234 1234 1234">
+                            </div>
+                            <div class="card-bottom">
+                                <div class="bottom-div">
+                                    <label for="valid-date">Срок действия</label>
+                                    <input type="number" class="valid" id="valid-date-month" placeholder="02"><span class="valid-slash">/</span><input type="number" class="valid" id="valid-date-year" placeholder="28">
+                                </div>
+                                <div class="bottom-div">
+                                    <label for="cvv">CVV</label>
+                                    <input type="password" pattern="[0-9]" inputmode="numeric" id="cvv" class="cvv" maxlength="3" placeholder="***">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pay-button-div">
+                            <button class="button blue-button pay-button">Оплатить <span class="payment-amount">28,01 ₽</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <label for="account-login">Логин аккаунта</label>
+                    <input type="text" id="account-login" placeholder ="login">
+                    <label for="account-password">Пароль аккаунта</label>
+                    <input type="password" id="account-password" placeholder="password">
+                    <div class="balance-card-group">
+                        <div class="balance-card eur-balance-card">
+                            <img src="img/card-icons/currency/eur.svg" alt="usd icon" class="currency-icon">
+                            <span class="balance-text eur-amount">50</span>
+                        </div>
+                        <div class="balance-card usd-balance-card">
+                            <img src="img/card-icons/currency/usd.svg" alt="usd icon" class="currency-icon">
+                            <span class="balance-text usd-amount">150</span>
+                        </div>
+                        <div class="balance-card rub-balance-card">
+                            <img src="img/card-icons/currency/rub.svg" alt="usd icon" class="currency-icon">
+                            <span class="balance-text rub-amount">500 000</span>
+                        </div>
+                    </div>
+                    <button class="button blue-button pay-button">Оплатить <span class="payment-amount">28,01 ₽</span></button>
+                </div>
+            </div>
+            <div class="payment-right">
+                <h2 class="payment-title">seller.com</h2>
+                <h1 class="payment-amount-title"><span class="payment-amount">28,01 ₽</span></h1>
+                <p class="payment-subtitle">Комиссия будет расчитана после ввода реквизитов карты</p>
+                <p class="payment-descr">Совершая платёж, Вы пополняете баланс кошелька. Банк,
+                    выпустивший карту, может взимать дополнительную комиссию. Счёт действителен
+                    5 часов.</p>
+                <p class="payment-subtitle">Seller: оплата счёта <span class="payment-account-number">1203758</span></p>
+                <p class="payment-text">Совершая оплату, вы соглашаетесь с
+                    <a href="offers.html" target="_blank" class="link offer-button">Офертой</a>
+                </p>
+                
+            </div>
+        </div>
+        <div class="modal-window">
+            <div class="modal-window-content">
+                <button class="button close-modal"></button>
+                <h3 class="modal_content modal-title">Модальное окно № 1</h3>
+                <p class="modal_content modal-text">Тут мог быть ваш текст</p>
+                <p class="modal_content modal-descr">Тут могло быть ваше описание</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-bottom-part">
+            <img src="img/pci.svg" alt="icon: pci" class="footer-copyright-img">
+            <img src="img/visa.svg" alt="icon: visa" class="footer-copyright-img">
+            <img src="img/mir.svg" alt="icon: mir" class="footer-copyright-img">
+            <img src="img/ms.svg" alt="icon: ms" class="footer-copyright-img">
+            <div class="footer-descr-div">
+                <p class="footer-descr-p">Ваши данные под защитой</p>
+                <p class="footer-descr-p">Реквизиты банковской карты и регистрационные данные передаются по защищённым
+                    протоколам и не попадут в интернет-магазин и третьим лицам. Платежи обрабатываются на защищённой
+                    странице процессинга по стандарту PCI&nbsp;DSS - Payment Card Industry Data Security Standart.</p>
+            </div>
+        </div>
+    </footer>
+<script src="js/burger.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/payment.js"></script>
+</body>
+</html>

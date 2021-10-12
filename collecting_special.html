@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Сбор №252 - Payser.Pro</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fundraising.css">
+</head>
+<body class="fund_spec">
+    <header class="header">
+        <div class="header-link-group">
+            <div class="header-left">
+                <a href="index.html" class="main-logo-link button">
+                    <img src="img/payser_logo/main/payser_main_v1.svg" alt="payser.pro logo" class="main-logo-img">
+                </a>
+            </div>
+            <div class="header-right">
+                <a href="registration.html" class="registration-link button">Создать&nbsp;кошелёк</a>
+                <a href="login.html" class="login-link button">Войти</a>
+            </div>
+            <button class="burger-button">
+                <img src="img/expand_arrow.svg" alt="expand arrow icon" class="burger-icon">
+            </button>
+            <div class="burger-menu">
+                <ul class="burger-list">
+                    <li class="burger-list-item">
+                        <a href="login.html" class="login-link button burger-link">Войти</a>
+                    </li>
+                    <li class="burger-list-item">
+                        <a href="registration.html" class="registration-link button burger-link">Создать&nbsp;кошелёк</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- <button class="chat-button button ">
+        <img src="img/chat.svg" width="35" alt="icon: chat" class="chat-icon">
+    </button>
+    <div class="chat-block"></div> -->
+    <div class="collecting-card">
+        <h1 class="main-title" style="text-align: center;">Сбор средств для Ютуб канала<br />
+        Как проебать свою жизнь за наркотиками</h1>
+        <p class="main-subtitle">Порошков Шурин получит вашу посылку в виде оплаты за товар
+            в свой PaySer кошелёк
+        </p>
+        <form class="universal-form">
+            <div class="flex-form">
+                <select name="amount" id="amount">
+                    <option value="previous1">50</option>
+                    <option value="previous2">100</option>
+                    <option value="previous3">250</option>
+                </select>
+                <div class="currency-div">
+                    <img src="img/card-icons/currency/eur.svg" alt="usd icon" class="currency-icon">
+                    <!-- <img src="img/card-icons/currency/usd.svg" alt="usd icon" class="currency-icon"> -->
+                    <!-- <img src="img/card-icons/currency/rub.svg" alt="usd icon" class="currency-icon"> -->
+                </div>
+            </div>
+            <label for="payment_method" class="main-label" style="text-align: center;">Выберите способ оплаты</label>
+            <div class="radio-div">
+                <input type="radio" name="payment_method" id="payser_wallet" class="radio-input">
+                <label for="payser_wallet" name="payment_method" class="pay-method-label">
+                    <img src="img/payser_logo/logo/payser_logo.svg" alt="icon: logo" width="40" class="logo-img payment-method-img">
+                    Через PaySer кошелёк
+                </label>
+            </div>
+            <div class="radio-div">
+                <!-- ESLI KARTA PODKLUCHENA: -->
+                <input type="radio" name="payment_method" id="bank_card" class="radio-input" disabled>
+                <!-- 1. uberite disabled sverchu -->
+                <label for="bank_card" name="payment_method" class="pay-method-label">
+                    <img src="img/credit-card.svg" width="40" alt="icon: bank card" class="bank-card-img payment-method-img">
+                    Через банковскую карту
+                </label>
+            </div>
+                    <!-- 2. udalite ves etot <p> nahui -->
+            <p class="alert no_card-alert">У вас не подключена банковская карта.<a href="profile.html" class="no_card-alert-link">Подключить</a></p>
+            <input type="submit" value="Оплатить сбор" class="button submit-input">
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footer-top-part">
+            <div class="foot-left">
+                <h4 class="list-title">Информация</h4>
+                <ul class="list">
+                    <li class="list-item"><a href="index.html#about" class="list-link">О нас</a></li>
+                    <li class="list-item"><a href="index.html#posibilities" class="list-link">Наши возможности</a></li>
+                    <li class="list-item"><a href="offers.html" class="list-link">Оферты</a></li>
+                </ul>
+            </div>
+            <div class="foot-center">
+                <h4 class="list-title">Клиентам</h4>
+                <ul class="list">
+                    <li class="list-item"><a href="terms-of-use.html" class="list-link">Пользовательское соглашение</a></li>
+                    <li class="list-item"><a href="privacy-policy.html" class="list-link">Политика конфиденциальности</a></li>
+                    <li class="list-item"><a href="data-protection.html" class="list-link">Защита данных</a></li>
+                </ul>
+            </div>
+            <div class="foot-right">
+                <h4 class="list-title">Разработчикам</h4>
+                <ul class="list">
+                    <li class="list-item"><a href="api_main.html" class="list-link">API (P2P)</a></li>
+                    <li class="list-item"><a href="api_main.html" class="list-link">API (B2B)</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom-part">
+            <div class="button-group">
+                <a href="#" class="mob-link appstore-mob-link button">
+                    <img src="img/app_store.svg" width="30" alt="icon: apple" class="apple-icon">
+                    <span class="mob-link-text">App Store</span>
+                </a>
+                <a href="#" class="mob-link googleplay-mob-link button">
+                    <img src="img/google_play.svg" width="30" alt="icon: google play" class="googleplay-icon">
+                    <span class="mob-link-text">Google Play</span>
+                </a>
+            </div>
+            <img src="img/pci.svg" alt="icon: pci" class="footer-copyright-img">
+            <img src="img/visa.svg" alt="icon: visa" class="footer-copyright-img">
+            <img src="img/mir.svg" alt="icon: mir" class="footer-copyright-img">
+            <img src="img/ms.svg" alt="icon: ms" class="footer-copyright-img">
+            <p class="copyright-p">© 2020 Payser.pro, Inc.</p>
+        </div>
+    </footer>
+<script src="js/burger.js"></script>
+<script src="js/modal.js"></script>
+</body>
+</html>

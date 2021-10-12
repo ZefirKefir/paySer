@@ -1,0 +1,197 @@
+/* API */
+.api_main-body .section-card {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-column-gap: 20px;
+}
+.api_main-body .documentation {
+    /* background-color: #35a; */
+    /* border: 1px solid #000; */
+}
+
+.api_main-body .documentation .mini-sections {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+.api_main-body .documentation .mini-section-button {
+    width: 95%;
+    text-align-last: left;
+    padding: 15px 10px;
+    color: #0e20be;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: inherit;
+    background: none;
+    border: 1.5px solid #4858e642;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #78cde25e;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.api_main-body .documentation .mini-section-button:not(:last-child) {
+    /* margin-bottom: 10px; */
+}
+.api_main-body .documentation .mini-section-icon {
+    width: 30px;
+    height: 30px;
+    transition: .2s;
+}
+.api_main-body .documentation .mini-section-icon_active {
+    transform: rotate(-180deg);
+    transition: .2s;
+}
+.api_main-body .mini-section .section-list {
+    list-style: none;
+    padding-left: 10px;
+    color: #0e20be;
+    font-weight: 500;
+    /* display: none; */
+    visibility: hidden;
+    margin: 7px 0;
+    opacity: 0;
+    transition: all .15s ease;
+    height: 0;
+    transform: translateY(-10%);
+}
+.api_main-body .mini-section .section-list_active {
+    /* display: block; */
+    visibility: visible;
+    transform: translateY(0);
+    height: 100%;
+    opacity: 1;
+    animation: growDown 300ms ease-in-out forwards;
+}
+.api_main-body .mini-section .section-list-item:not(:last-child) {
+    margin-bottom: 3px;
+}
+.api_main-body .mini-section .section-list-link {
+    text-decoration: none;
+}
+.api_main-body .mini-section .section-list-link:hover {
+    text-decoration: underline;
+}
+
+.api_main-body .api-key .warning-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border: 1.5px solid #4858e642;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #78cde25e;
+    margin: 15px 0;
+}
+.api_main-body .api-key .warning-icon {
+    width: 50px;
+    height: 50px;    
+    margin-right: 10px;
+}
+.api_main-body .api-key .key-permissions {
+    padding: 0 40px;
+    margin: 20px 0;
+}
+.api_main-body .api-key .button {
+    display: block;
+    margin: 25px auto;
+}
+.sub-descr {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #919191;
+}
+.link {
+    text-decoration: none;
+    color: #000F9C;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+/* api not_main */
+.api-body .title-div {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-bottom: 12px;
+    border-bottom: 2px solid #000F9C;
+}
+.api-body .title-div .main-title-icon {
+    width: 50px;
+    height: 50px;
+    transform: rotate(90deg) translateX(2px);
+    /* margin-right: 50px; */
+}
+.api-body .title-div .main-title {
+    display: inline-block;
+    font-size: 26px;
+}
+
+.api-body .main-subtitle {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: #0050dc;
+    padding: 15px 0;
+}
+.api-body .main-subtitle .main-subtitle-icon {
+    width: 45px;
+    height: 45px;
+    transform: rotate(-90deg);
+}
+.api-body .main-sub_subtitle {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.api-body .url-card .code-p {
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding-bottom: 5px;
+}
+.api-body .response-div {
+    margin-top: 30px;
+}
+.api-body .response-card {
+    padding: 0 10px;
+    border: 1px solid rgb(206, 206, 206);
+}
+.api-body .code-font {
+    color: #a80451;
+}
+
+@media(max-width:350px) {
+    * {
+        transition: .2s;
+    }
+    .api-body .section-card {
+        padding: 20px;
+    }
+    .api-body .title-div {
+        padding-bottom: 15px;
+    }
+    .api-body .title-div .main-title {
+        font-size: 20px;
+    }
+    .api-body .main-subtitle {
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        line-height: 10px;
+        flex-wrap: wrap;
+    }
+    .api-body .main-sub_subtitle {
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+    .api-body .response-div {
+        margin-top: 10px;
+    }
+    .api-body .response-card {
+        padding: 0 10px;
+        border: 1px solid rgb(206, 206, 206);
+    }
+}

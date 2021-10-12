@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Сбор средств - Payser.Pro</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fundraising.css">
+</head>
+<body class="fundraising-body">
+    <header class="header">
+        <div class="header-link-group">
+            <div class="header-left">
+                <a href="index.html" class="main-logo-link button">
+                    <img src="img/payser_logo/main/payser_main_v1.svg" alt="payser.pro logo" class="main-logo-img">
+                </a>
+            </div>
+            <div class="header-right">
+                <a href="registration.html" class="registration-link button">Создать&nbsp;кошелёк</a>
+                <a href="login.html" class="login-link button">Войти</a>
+            </div>
+            <button class="burger-button">
+                <img src="img/expand_arrow.svg" alt="expand arrow icon" class="burger-icon">
+            </button>
+            <div class="burger-menu">
+                <ul class="burger-list">
+                    <li class="burger-list-item">
+                        <a href="login.html" class="login-link button burger-link">Войти</a>
+                    </li>
+                    <li class="burger-list-item">
+                        <a href="registration.html" class="registration-link button burger-link">Создать&nbsp;кошелёк</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- <button class="chat-button button ">
+        <img src="img/chat.svg" width="35" alt="icon: chat" class="chat-icon">
+    </button>
+    <div class="chat-block"></div> -->
+    <div class="content-container">
+        <div class="fundraising-left">
+            <h1 class="fund-card-title">Приём платежей для физических лиц</h1>
+            <p class="fund-card-descr">Продавайте товары и услуги как самозанятый и получайте деньги
+                мгновенно на PaySer кошелёк. Без регистрации ИП и&nbsp;других заморочек</p>
+                <button class="blue-button fundraising-button modal-button button">Открыть сбор</button>
+                
+        </div>
+        <div class="modal-window">
+            <div class="modal-window-content">
+                <button class="button close-modal"></button>
+                <h3 class="modal-title">Создать сбор</h3>
+                <form class="universal-form">
+                        <label for="unique-link" class="main-label">Уникальная ссылка</label>
+                        <input type="text" id="unique-link" class="simple-input">
+                        <label for="name" class="main-label">Название</label>
+                        <input type="text" id="name" class="simple-input">
+                        <label for="textarea" class="main-label">Описание</label>
+                        <textarea name="textarea" class="textarea-input"></textarea>
+                        <label for="collectiong-amount" class="main-label">Сумма сбора</label>
+                    <div class="checkbox-div">
+                        <input type="checkbox" id="previous" class="checkbox-input">
+                        <label for="previous">Использовать предзаполненные суммы</label>
+                    </div>
+                    <div class="default-collecting-div_hidden default-collecting-div">
+                        <input type="number" id="previous1" value="50" class="simple-input default-amount-input">
+                        <input type="number" id="previous2" value="100" class="simple-input default-amount-input">
+                        <input type="number" id="previous3" value="150" class="simple-input default-amount-input">
+                    </div>
+                    <div class="select-div">
+                        <label for="currency" class="main-label">Выберите валюту</label>
+                        <select name="currency" id="currency">
+                            <option value="eur">EUR</option>
+                            <option value="usd">USD</option>
+                            <option value="rub">RUB</option>
+                        </select>
+                    </div>
+                    <div class="color-input-div">
+                        <label for="custom-color" class="main-label">Цвет фона</label>
+                        <input type="color" id="custom-background_color" class="color-input" value="#ffffff">
+                        <label for="custom-color" class="main-label" >Цвет кнопок</label>
+                        <input type="color" id="custom-button_color" class="color-input" value="#334fee">
+                    </div>
+                    <input type="submit" value="Создать сбор" class="submit-input button">
+                </form>
+            </div>
+        </div>
+        <div class="fundraising-right">
+            <!-- 1 -->
+            <div class="card first-card">
+                <div class="card-icon-div card-icon-div1">
+                    <img src="img/card-icons/offer1.svg" alt="card icon" class="card-icon">
+                </div>
+                <h4 class="card-title">Оплата по выставленному счёту</h4>
+                <p class="card-descr">Форма счёта уже готова &mdash; вам нужно только
+                    ввести сумму платежа поделиться ссылкой на этот счёт с клиентом</p>
+            </div>
+            <!-- 2 -->
+            <div class="card first-card">
+                <div class="card-icon-div card-icon-div2">
+                    <img src="img/card-icons/offer2.svg" alt="card icon" class="card-icon">
+                </div>
+                <h4 class="card-title">Перевод по никнейму</h4>
+                <p class="card-descr">Чтобы не светить почтой кошелька, создайте для него никнейм и
+                    указывайте для переводов</p>
+            </div>
+            <!-- 3 -->
+            <div class="card">
+                <div class="card-icon-div card-icon-div3">
+                    <img src="img/card-icons/offer3.svg" alt="card icon" class="card-icon">
+                </div>
+                <h4 class="card-title">Оплата по ссылке</h4>
+                <p class="card-descr">Создавайте единую ссылку для платежа и разместите где угодно
+                    или отправляйте лично каждому</p>
+            </div>
+            <!-- 4 -->
+            <div class="card">
+                <div class="card-icon-div card-icon-div4">
+                    <img src="img/card-icons/offer4.svg" alt="card icon" class="card-icon">
+                </div>
+                <h4 class="card-title">Виджет оплаты</h4>
+                <p class="card-descr">Это настоящая форма оплаты, который появится на вашем сайте.
+                    Клиент укажет сумму и отправит вам деньги. Встроить виджет просто - код уже готов</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-top-part">
+            <div class="foot-left">
+                <h4 class="list-title">Информация</h4>
+                <ul class="list">
+                    <li class="list-item"><a href="index.html#about" class="list-link">О нас</a></li>
+                    <li class="list-item"><a href="index.html#posibilities" class="list-link">Наши возможности</a></li>
+                    <li class="list-item"><a href="offers.html" class="list-link">Оферты</a></li>
+                </ul>
+            </div>
+            <div class="foot-center">
+                <h4 class="list-title">Клиентам</h4>
+                <ul class="list">
+                    <li class="list-item"><a href="terms-of-use.html" class="list-link">Пользовательское соглашение</a></li>
+                    <li class="list-item"><a href="privacy-policy.html" class="list-link">Политика конфиденциальности</a></li>
+                    <li class="list-item"><a href="data-protection.html" class="list-link">Защита данных</a></li>
+                </ul>
+            </div>
+            <div class="foot-right">
+                <h4 class="list-title">Разработчикам</h4>
+                <ul class="list">
+                    <li class="list-item"><a href="api_main.html" class="list-link">API (P2P)</a></li>
+                    <li class="list-item"><a href="api_main.html" class="list-link">API (B2B)</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom-part">
+            <div class="button-group">
+                <a href="#" class="mob-link appstore-mob-link button">
+                    <img src="img/app_store.svg" width="30" alt="icon: apple" class="apple-icon">
+                    <span class="mob-link-text">App Store</span>
+                </a>
+                <a href="#" class="mob-link googleplay-mob-link button">
+                    <img src="img/google_play.svg" width="30" alt="icon: google play" class="googleplay-icon">
+                    <span class="mob-link-text">Google Play</span>
+                </a>
+            </div>
+            <img src="img/pci.svg" alt="icon: pci" class="footer-copyright-img">
+            <img src="img/visa.svg" alt="icon: visa" class="footer-copyright-img">
+            <img src="img/mir.svg" alt="icon: mir" class="footer-copyright-img">
+            <img src="img/ms.svg" alt="icon: ms" class="footer-copyright-img">
+            <p class="copyright-p">© 2020 Payser.pro, Inc.</p>
+        </div>
+    </footer>
+<script src="js/burger.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/fundraising.js"></script>
+</body>
+</html>
